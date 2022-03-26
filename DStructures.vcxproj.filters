@@ -13,16 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\SLL">
+      <UniqueIdentifier>{7fe78ff3-ad3f-4b9b-9276-90a2e4a5c603}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DStructures.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SinglyLinkedList.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DStructures.cpp">
+      <Filter>Source Files\SLL</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\SLL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
