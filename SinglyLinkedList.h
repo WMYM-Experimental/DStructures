@@ -1,25 +1,31 @@
 #pragma once
 #include "Node.h"
-class SinglyLinkedList
-{
+class SinglyLinkedList{
 public:
+	// Atributes
 	Node* head;
 
-	//Default constructor
+	// ** CONSTRUCTORS **
+
+	// Default constructor
 	SinglyLinkedList();
 
-	//Params constructor
+	// Params constructor
 	SinglyLinkedList(Node* head);
 
 	// ** SLL METHODS **
+
+	int len();
 
 	void insertAtEnd(int n);
 
 	void insertAtBeginning(int n);
 
-	void insertAt(int nth, int n);
+	void insert(int v, int nth);
 
-	void deleteNode(int n);
+	void deleteFirst();
+
+	void deleteAt(int nth);
 
 	void print();
 };

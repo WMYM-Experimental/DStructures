@@ -1,16 +1,16 @@
 #pragma once
 #include <iostream>
 
-class Node
-{
+class Node{
 public:
+	// Atributes
 	int data;
 	Node* next;
 
-	//Default constructor
+	// Default constructor
 	Node();
 
-	//Params Constructor
+	// Params Constructor
 	Node(int data);
 };
 
