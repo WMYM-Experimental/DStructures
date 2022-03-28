@@ -127,6 +127,27 @@ void SinglyLinkedList::deleteAt(int nth) {
 	delete(temp);
 }
 
+void SinglyLinkedList::reverse_I(){
+
+	Node* previousNode = NULL;
+	Node* currentNode = this->head;
+	Node* nextNode = NULL;
+
+	// Taversal
+	while (currentNode != NULL) {
+		nextNode = currentNode->next; // save current pointer for next node
+		currentNode->next = previousNode; // set next pointer from the saved previous node pointer
+
+		previousNode = currentNode; // swap
+		currentNode = nextNode;
+	}
+	this->head = previousNode;
+}
+
+void SinglyLinkedList::reverse_R(Node* currentNode){
+	// TODO: Reverse a SLL using recursive method
+}
+
 void SinglyLinkedList::print() {
 	if (this->head == NULL) {
 		std::cout << "EMPTY LIST\n\n";

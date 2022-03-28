@@ -7,9 +7,10 @@
 
 int main(){
 	SinglyLinkedList* list = new SinglyLinkedList();
-	list->insert(1, 1);
-
-	list->deleteAt(list->len());
+	for (int i = 0; i <= 10; i++){
+		list->insert(i, i);
+	}
+	list->reverse_I();
 	list->print();
 
 
