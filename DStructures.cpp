@@ -6,17 +6,14 @@
 #include "SinglyLinkedList.h"
 
 int main(){
-	SinglyLinkedList* list = new SinglyLinkedList();
+	SinglyLinkedList* ll = new SinglyLinkedList();
+	
 	for (int i = 0; i <= 10; i++){
-		list->insert(i, i);
+		ll->insert(i*3, i);
 	}
-	list->reverse_I();
-	list->print();
-	list->print_R(list->head);
-	list->reversePrint_R(list->head);
-	list->reverse_R(list->head);
-	list->print();
 
-
-	std::cout<<list->len();
+	// std::cout << ll->search_I(2);
+	ll->print();
+	std::cout << ll->search_I(3)<<std::endl;
+	std::cout<<ll->len();
 }

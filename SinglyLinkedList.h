@@ -41,6 +41,9 @@ public:
 
 	Node* reverse_R(Node* currentNode);
 
+	// Search
+	int search_I(int k);
+
 	// Prints - Type of prints 
 	void print();
 

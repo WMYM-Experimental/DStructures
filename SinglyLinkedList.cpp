@@ -128,7 +128,6 @@ void SinglyLinkedList::deleteAt(int nth) {
 }
 
 void SinglyLinkedList::reverse_I() {
-
 	Node* previousNode = NULL;
 	Node* currentNode = this->head;
 	Node* nextNode = NULL;
@@ -149,7 +148,6 @@ Node* SinglyLinkedList::reverse_R(Node* currentNode) {
 		std::cout << "\n";
 		return NULL;
 	}
-
 	reverse_R(currentNode->next);
 	this->head = currentNode;
 }
@@ -170,6 +168,19 @@ void SinglyLinkedList::print_R(Node* node) {
 	}
 	std::cout << node->data << std::endl;
 	print_R(node->next);
+}
+
+int SinglyLinkedList::search_I(int k){
+	Node* currentNode = this->head;
+	int counter = 0;
+	while (currentNode != NULL){
+		if (currentNode->data == k){
+			return counter;
+		}
+		counter++;
+		currentNode = currentNode->next;
+	}
+	return -1;
 }
 
 void SinglyLinkedList::print() {
