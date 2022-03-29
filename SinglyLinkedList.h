@@ -1,13 +1,15 @@
 #pragma once
 #include "Node.h"
 class SinglyLinkedList{
-private:
-
-	// Atributes
+public:
+	//****************
+	// ** Atributes **
+	//****************
 	Node* head;
 
-public:
+	//*******************
 	// ** CONSTRUCTORS **
+	//*******************
 
 	// Default constructor
 	SinglyLinkedList();
@@ -15,7 +17,9 @@ public:
 	// Params constructor
 	SinglyLinkedList(Node* head);
 
+	//******************
 	// ** SLL METHODS **
+	//******************
 
 	// Lenght
 	int len();
@@ -35,9 +39,13 @@ public:
 	// Reverse
 	void reverse_I();
 
-	void reverse_R(Node* currentNode);
+	Node* reverse_R(Node* currentNode);
 
-	// Print
+	// Prints - Type of prints 
 	void print();
+
+	void reversePrint_R(Node* node);
+
+	void print_R(Node* node);
 };
 

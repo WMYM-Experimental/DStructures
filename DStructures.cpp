@@ -12,6 +12,10 @@ int main(){
 	}
 	list->reverse_I();
 	list->print();
+	list->print_R(list->head);
+	list->reversePrint_R(list->head);
+	list->reverse_R(list->head);
+	list->print();
 
 
 	std::cout<<list->len();
