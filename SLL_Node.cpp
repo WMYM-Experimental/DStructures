@@ -1,13 +1,13 @@
-#include "Node.h"
+#include "SLL_Node.h"
 
 // Default Constructor
-Node::Node() {
+SLL_Node::SLL_Node() {
 	this->data = 0;
 	this->next = NULL;
 }
 
 // Params Constructor
-Node::Node(int data) {
+SLL_Node::SLL_Node(int data) {
 	this->data = data;
 	this->next = NULL;
 }

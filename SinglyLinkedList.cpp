@@ -6,14 +6,14 @@ SinglyLinkedList::SinglyLinkedList() {
 }
 
 // Params Constructor
-SinglyLinkedList::SinglyLinkedList(Node* head) {
+SinglyLinkedList::SinglyLinkedList(SLL_Node* head) {
 	this->head = head;
 }
 
 // ** METHODS **
 
 int SinglyLinkedList::len() {
-	Node* currentNode = this->head;
+	SLL_Node* currentNode = this->head;
 	int l = 0;
 	// Taversal
 	while (currentNode != NULL) {
@@ -24,14 +24,14 @@ int SinglyLinkedList::len() {
 }
 
 void SinglyLinkedList::insertAtEnd(int n) {
-	Node* newNode = new Node(n);
+	SLL_Node* newNode = new SLL_Node(n);
 
 	if (head == NULL) {
 		head = newNode;
 		return;
 	}
 
-	Node* currentNode = this->head;
+	SLL_Node* currentNode = this->head;
 
 	// Taversal
 	while (currentNode->next != NULL) {
@@ -43,8 +43,8 @@ void SinglyLinkedList::insertAtEnd(int n) {
 
 void SinglyLinkedList::insertAtBeginning(int n)
 {
-	Node* aux = this->head;
-	Node* newNode = new Node(n);
+	SLL_Node* aux = this->head;
+	SLL_Node* newNode = new SLL_Node(n);
 
 	newNode->next = aux;
 	head = newNode;
@@ -69,8 +69,8 @@ void SinglyLinkedList::insert(int v, int nth) {
 	}
 
 	// Default nth position insertion
-	Node* newNode = new Node(v);
-	Node* aux = this->head;
+	SLL_Node* newNode = new SLL_Node(v);
+	SLL_Node* aux = this->head;
 
 	for (int i = 0; i < nth - 1; i++) {
 		aux = aux->next;
@@ -86,7 +86,7 @@ void SinglyLinkedList::deleteFirst() {
 		exit(EXIT_FAILURE);
 	}
 
-	Node* newHead = this->head->next;
+	SLL_Node* newHead = this->head->next;
 	delete(this->head);
 	this->head = newHead;
 }
@@ -115,22 +115,22 @@ void SinglyLinkedList::deleteAt(int nth) {
 		return;
 	}
 
-	Node* aux = this->head;
+	SLL_Node* aux = this->head;
 
 	for (int i = 0; i < nth - 2; i++) {
 		aux = aux->next;
 	}
 
-	Node* temp = aux->next;
+	SLL_Node* temp = aux->next;
 	aux->next = temp->next;
 
 	delete(temp);
 }
 
 void SinglyLinkedList::reverse_I() {
-	Node* previousNode = NULL;
-	Node* currentNode = this->head;
-	Node* nextNode = NULL;
+	SLL_Node* previousNode = NULL;
+	SLL_Node* currentNode = this->head;
+	SLL_Node* nextNode = NULL;
 
 	// Taversal
 	while (currentNode != NULL) {
@@ -143,7 +143,7 @@ void SinglyLinkedList::reverse_I() {
 	this->head = previousNode;
 }
 
-Node* SinglyLinkedList::reverse_R(Node* currentNode) {
+SLL_Node* SinglyLinkedList::reverse_R(SLL_Node* currentNode) {
 	if (currentNode == NULL) {
 		std::cout << "\n";
 		return NULL;
@@ -152,7 +152,7 @@ Node* SinglyLinkedList::reverse_R(Node* currentNode) {
 	this->head = currentNode;
 }
 
-void SinglyLinkedList::reversePrint_R(Node* node) {
+void SinglyLinkedList::reversePrint_R(SLL_Node* node) {
 	if (node == NULL) {
 		std::cout << "\n";
 		return;
@@ -161,7 +161,7 @@ void SinglyLinkedList::reversePrint_R(Node* node) {
 	std::cout << node->data << std::endl;
 }
 
-void SinglyLinkedList::print_R(Node* node) {
+void SinglyLinkedList::print_R(SLL_Node* node) {
 	if (node == NULL) {
 		std::cout << "\n";
 		return;
@@ -171,7 +171,7 @@ void SinglyLinkedList::print_R(Node* node) {
 }
 
 int SinglyLinkedList::search_I(int k){
-	Node* currentNode = this->head;
+	SLL_Node* currentNode = this->head;
 	int counter = 0;
 	while (currentNode != NULL){
 		if (currentNode->data == k){
@@ -189,7 +189,7 @@ void SinglyLinkedList::print() {
 		return;
 	}
 
-	Node* currentNode = this->head;
+	SLL_Node* currentNode = this->head;
 
 	// Taversal
 	while (currentNode != NULL) {

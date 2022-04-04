@@ -1,22 +1,22 @@
 #pragma once
 #include <iostream>
 
-class Node {
+class SLL_Node {
 public:
 	//****************
 	// ** Atributes **
 	//****************
 	int data;
-	Node* next;
+	SLL_Node* next;
 
 	//*******************
 	// ** CONSTRUCTORS **
 	//*******************
 
 	// Default constructor
-	Node();
+	SLL_Node();
 
 	// Params Constructor
-	Node(int data);
+	SLL_Node(int data);
 };
 

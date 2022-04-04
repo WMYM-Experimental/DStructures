@@ -2,8 +2,12 @@
 //
 
 #include <iostream>
-#include "Node.h"
+
+#include "SLL_Node.h"
 #include "SinglyLinkedList.h"
+
+#include "DLL_Node.h"
+#include "DoubleLinkedList.h"
 
 int main(){
 	SinglyLinkedList* ll = new SinglyLinkedList();

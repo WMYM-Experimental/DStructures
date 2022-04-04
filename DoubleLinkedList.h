@@ -1,25 +1,24 @@
 #pragma once
-#include "SLL_Node.h"
+#include "DLL_Node.h"
 
-class SinglyLinkedList{
-public:
+class DoubleLinkedList{
 	//****************
 	// ** Atributes **
 	//****************
-	SLL_Node* head;
+	DLL_Node* head;
 
 	//*******************
 	// ** CONSTRUCTORS **
 	//*******************
 
 	// Default constructor
-	SinglyLinkedList();
+	DoubleLinkedList();
 
 	// Params constructor
-	SinglyLinkedList(SLL_Node* head);
+	DoubleLinkedList(DLL_Node* head);
 
 	//******************
-	// ** SLL METHODS **
+	// ** DLL METHODS **
 	//******************
 
 	// Lenght
@@ -40,7 +39,7 @@ public:
 	// Reverse
 	void reverse_I();
 
-	SLL_Node* reverse_R(SLL_Node* currentNode);
+	DLL_Node* reverse_R(DLL_Node* currentNode);
 
 	// Search
 	int search_I(int k);
@@ -48,8 +47,8 @@ public:
 	// Prints - Type of prints 
 	void print();
 
-	void reversePrint_R(SLL_Node* node);
+	void reversePrint_R(DLL_Node* node);
 
-	void print_R(SLL_Node* node);
+	void print_R(DLL_Node* node);
 };
 

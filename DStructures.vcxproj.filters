@@ -16,23 +16,38 @@
     <Filter Include="Source Files\SLL">
       <UniqueIdentifier>{7fe78ff3-ad3f-4b9b-9276-90a2e4a5c603}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\DLL">
+      <UniqueIdentifier>{b554cb94-7b67-4c6d-bcac-1bd2740f57a2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="SLL_Node.cpp">
+      <Filter>Source Files\SLL</Filter>
+    </ClCompile>
+    <ClCompile Include="DLL_Node.cpp">
+      <Filter>Source Files\DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleLinkedList.cpp">
+      <Filter>Source Files\DLL</Filter>
+    </ClCompile>
     <ClCompile Include="SinglyLinkedList.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\SLL</Filter>
     </ClCompile>
     <ClCompile Include="DStructures.cpp">
-      <Filter>Source Files\SLL</Filter>
-    </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>Source Files\SLL</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Node.h">
+    <ClInclude Include="SLL_Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SinglyLinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DLL_Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleLinkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
