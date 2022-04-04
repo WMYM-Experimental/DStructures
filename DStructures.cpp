@@ -10,14 +10,14 @@
 #include "DoubleLinkedList.h"
 
 int main(){
-	SinglyLinkedList* ll = new SinglyLinkedList();
+	SinglyLinkedList* sll = new SinglyLinkedList();
+	DoubleLinkedList* dll = new DoubleLinkedList();
 	
 	for (int i = 0; i <= 10; i++){
-		ll->insert(i*3, i);
+		dll->insertAtEnd(i);
 	}
 
 	// std::cout << ll->search_I(2);
-	ll->print();
-	std::cout << ll->search_I(3)<<std::endl;
-	std::cout<<ll->len();
+	dll->print();
+	std::cout<<dll->len();
 }

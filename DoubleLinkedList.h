@@ -2,6 +2,7 @@
 #include "DLL_Node.h"
 
 class DoubleLinkedList{
+public:
 	//****************
 	// ** Atributes **
 	//****************

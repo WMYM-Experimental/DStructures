@@ -150,6 +150,7 @@ SLL_Node* SinglyLinkedList::reverse_R(SLL_Node* currentNode) {
 	}
 	reverse_R(currentNode->next);
 	this->head = currentNode;
+	return currentNode;
 }
 
 void SinglyLinkedList::reversePrint_R(SLL_Node* node) {
