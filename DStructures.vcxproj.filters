@@ -19,6 +19,9 @@
     <Filter Include="Source Files\DLL">
       <UniqueIdentifier>{b554cb94-7b67-4c6d-bcac-1bd2740f57a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\STACK">
+      <UniqueIdentifier>{92ea5966-6bc7-4e32-82e7-cdd13f9c3819}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SLL_Node.cpp">
@@ -36,6 +39,9 @@
     <ClCompile Include="DStructures.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Stack_SLL.cpp">
+      <Filter>Source Files\STACK</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SLL_Node.h">
@@ -48,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DoubleLinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack_SLL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

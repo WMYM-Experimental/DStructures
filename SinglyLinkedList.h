@@ -37,6 +37,10 @@ public:
 
 	void deleteAt(int nth);
 
+	void deleteAtEnd();
+
+	int peek();
+
 	// Reverse
 	void reverse_I();
 

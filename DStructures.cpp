@@ -9,15 +9,19 @@
 #include "DLL_Node.h"
 #include "DoubleLinkedList.h"
 
+#include "Stack_SLL.h"
+
 int main(){
-	SinglyLinkedList* sll = new SinglyLinkedList();
-	DoubleLinkedList* dll = new DoubleLinkedList();
+	Stack_SLL* s = new Stack_SLL();
 	
 	for (int i = 0; i <= 10; i++){
-		dll->insertAtEnd(i);
+		s->push(i);
 	}
 
-	// std::cout << ll->search_I(2);
-	dll->print();
-	std::cout<<dll->len();
+	s->print();
+	s->pop();
+	s->pop();
+
+	s->print();
+	std::cout<<s->size();
 }

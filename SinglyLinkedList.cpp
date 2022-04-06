@@ -13,8 +13,13 @@ SinglyLinkedList::SinglyLinkedList(SLL_Node* head) {
 // ** METHODS **
 
 int SinglyLinkedList::len() {
+	if (this->head == NULL) {
+		return 0;
+	}
+
 	SLL_Node* currentNode = this->head;
 	int l = 0;
+
 	// Taversal
 	while (currentNode != NULL) {
 		l++;
@@ -125,6 +130,18 @@ void SinglyLinkedList::deleteAt(int nth) {
 	aux->next = temp->next;
 
 	delete(temp);
+}
+
+void SinglyLinkedList::deleteAtEnd(){
+	this->deleteAt(this->len());
+}
+
+int SinglyLinkedList::peek(){
+	SLL_Node* aux = this->head;
+	while (aux->next != NULL) {
+		aux = aux->next;
+	}
+	return aux->data;
 }
 
 void SinglyLinkedList::reverse_I() {
