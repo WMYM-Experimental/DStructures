@@ -37,7 +37,7 @@ public:
 
 	void deleteAt(int nth);
 
-	void deleteAtEnd();
+	int deleteAtEnd();
 
 	int peek();
 

@@ -132,8 +132,11 @@ void SinglyLinkedList::deleteAt(int nth) {
 	delete(temp);
 }
 
-void SinglyLinkedList::deleteAtEnd(){
+int SinglyLinkedList::deleteAtEnd(){
+	// bad try to do this could improve O(2n) :c
+	int temp = this->peek();
 	this->deleteAt(this->len());
+	return temp;
 }
 
 int SinglyLinkedList::peek(){

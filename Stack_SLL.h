@@ -10,7 +10,7 @@ public:
 
 	void push(int data);
 
-	void pop(); // TODO: RETURN ELIMINATED NODE
+	int pop(); // TODO: RETURN ELIMINATED NODE
 
 	int peek();
 

@@ -8,9 +8,8 @@ void Stack_SLL::push(int data){
 	stk->insertAtEnd(data);
 }
 
-void Stack_SLL::pop(){
-	stk->deleteAtEnd();
-	// TODO: RETURN ELIMINATED NODE
+int Stack_SLL::pop(){
+	return stk->deleteAtEnd();
 }
 
 int Stack_SLL::peek(){

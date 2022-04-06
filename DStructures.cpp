@@ -19,8 +19,8 @@ int main(){
 	}
 
 	s->print();
-	s->pop();
-	s->pop();
+	std::cout << s->pop() << std::endl;
+	std::cout << s->pop() << std::endl << std::endl;
 
 	s->print();
 	std::cout<<s->size();
