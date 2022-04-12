@@ -22,6 +22,9 @@
     <Filter Include="Source Files\STACK">
       <UniqueIdentifier>{92ea5966-6bc7-4e32-82e7-cdd13f9c3819}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\QUEUE">
+      <UniqueIdentifier>{406f9648-a5ae-429e-8b75-578b0bbeeb6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SLL_Node.cpp">
@@ -42,6 +45,9 @@
     <ClCompile Include="Stack_SLL.cpp">
       <Filter>Source Files\STACK</Filter>
     </ClCompile>
+    <ClCompile Include="Queue_SLL.cpp">
+      <Filter>Source Files\QUEUE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SLL_Node.h">
@@ -57,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Stack_SLL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue_SLL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

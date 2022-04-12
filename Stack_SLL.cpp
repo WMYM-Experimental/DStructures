@@ -1,27 +1,23 @@
 #include "Stack_SLL.h"
 
 Stack_SLL::Stack_SLL(){
-	stk = new SinglyLinkedList();
+	this->stk = new SinglyLinkedList();
 }
 
 void Stack_SLL::push(int data){
-	stk->insertAtEnd(data);
+	this->stk->insertAtEnd(data);
 }
 
 int Stack_SLL::pop(){
-	return stk->deleteAtEnd();
+	return this->stk->deleteAtEnd();
 }
 
 int Stack_SLL::peek(){
-	return stk->peek();
+	return this->stk->peek();
 }
 
 bool Stack_SLL::empty(){
-	if (stk->head == NULL) {
-		return true;
-	}
-
-	if (stk->len() == 0) {
+	if (this->stk->head == NULL || this->stk->len() == 0) {
 		return true;
 	}
 
@@ -29,13 +25,13 @@ bool Stack_SLL::empty(){
 }
 
 int Stack_SLL::size(){
-	return stk->len();
+	return this->stk->len();
 }
 
 void Stack_SLL::print(){
-	stk->print();
+	this->stk->print();
 }
 
 void Stack_SLL::reversePrint(){
-	stk->reversePrint_R(stk->head);
+	this->stk->reversePrint_R(this->stk->head);
 }

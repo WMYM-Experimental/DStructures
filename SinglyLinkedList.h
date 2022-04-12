@@ -41,7 +41,7 @@ public:
 
 	int peek();
 
-	// Reverse
+	// Reverse SLL
 	void reverse_I();
 
 	SLL_Node* reverse_R(SLL_Node* currentNode);
@@ -52,8 +52,8 @@ public:
 	// Prints - Type of prints 
 	void print();
 
-	void reversePrint_R(SLL_Node* node);
-
 	void print_R(SLL_Node* node);
+
+	void reversePrint_R(SLL_Node* node);
 };
 
