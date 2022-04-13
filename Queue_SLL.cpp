@@ -5,15 +5,17 @@ Queue_SLL::Queue_SLL() {
 }
 
 void Queue_SLL::add(int data){
+    this->queue->insertAtEnd(data);
 }
 
 int Queue_SLL::peek(){
-    return 0;
+    return this->queue->head->data;
 }
 
-void Queue_SLL::poll(){
+int Queue_SLL::poll(){
+    return this->queue->deleteAtEnd();
 }
 
 int Queue_SLL::size(){
-    return 0;
+    return this->queue->len();
 }

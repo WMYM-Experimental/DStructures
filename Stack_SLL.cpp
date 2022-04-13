@@ -20,7 +20,6 @@ bool Stack_SLL::empty(){
 	if (this->stk->head == NULL || this->stk->len() == 0) {
 		return true;
 	}
-
 	return false;
 }
 

@@ -8,7 +8,7 @@ public:
 
 	int peek();
 
-	void poll();
+	int poll();
 
 	int size();
 };
