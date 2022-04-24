@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DLL_Node.cpp" />
-    <ClCompile Include="DoubleLinkedList.cpp" />
+    <ClCompile Include="DoublyLinkedList.cpp" />
     <ClCompile Include="DStructures.cpp" />
     <ClCompile Include="Queue_SLL.cpp" />
     <ClCompile Include="SLL_Node.cpp" />
@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLL_Node.h" />
-    <ClInclude Include="DoubleLinkedList.h" />
+    <ClInclude Include="DoublyLinkedList.h" />
     <ClInclude Include="Queue_SLL.h" />
     <ClInclude Include="SLL_Node.h" />
     <ClInclude Include="SinglyLinkedList.h" />

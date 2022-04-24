@@ -58,7 +58,7 @@ void SinglyLinkedList::insertAtBeginning(int n)
 void SinglyLinkedList::insert(int v, int nth) {
 
 	// Check valid position
-	if (nth > this->len()) {
+	if (nth > this->len() || nth < 0) {
 		std::cout << "Invalid Position\t" << nth << std::endl;
 		exit(EXIT_FAILURE);
 	}

@@ -25,6 +25,9 @@
     <Filter Include="Source Files\QUEUE">
       <UniqueIdentifier>{406f9648-a5ae-429e-8b75-578b0bbeeb6d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BST">
+      <UniqueIdentifier>{2292a687-8ed5-444f-a8a8-95c0bfe2a148}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SLL_Node.cpp">
@@ -33,7 +36,7 @@
     <ClCompile Include="DLL_Node.cpp">
       <Filter>Source Files\DLL</Filter>
     </ClCompile>
-    <ClCompile Include="DoubleLinkedList.cpp">
+    <ClCompile Include="DoublyLinkedList.cpp">
       <Filter>Source Files\DLL</Filter>
     </ClCompile>
     <ClCompile Include="SinglyLinkedList.cpp">
@@ -59,7 +62,7 @@
     <ClInclude Include="DLL_Node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DoubleLinkedList.h">
+    <ClInclude Include="DoublyLinkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Stack_SLL.h">

@@ -1,22 +1,18 @@
 #pragma once
 #include "DLL_Node.h"
 
-class DoubleLinkedList{
+class DoublyLinkedList{
 public:
 	//****************
 	// ** Atributes **
 	//****************
 	DLL_Node* head;
 
-	//*******************
-	// ** CONSTRUCTORS **
-	//*******************
-
 	// Default constructor
-	DoubleLinkedList();
+	DoublyLinkedList();
 
 	// Params constructor
-	DoubleLinkedList(DLL_Node* head);
+	DoublyLinkedList(DLL_Node* head);
 
 	//******************
 	// ** DLL METHODS **
@@ -34,6 +30,8 @@ public:
 
 	// Delete
 	void deleteFirst();
+
+	void deleteEnd();
 
 	void deleteAt(int nth);
 

@@ -7,21 +7,17 @@
 #include "SinglyLinkedList.h"
 
 #include "DLL_Node.h"
-#include "DoubleLinkedList.h"
+#include "DoublyLinkedList.h"
 
 #include "Stack_SLL.h"
 
 int main(){
-	Stack_SLL* s = new Stack_SLL();
+	DoublyLinkedList* dll = new DoublyLinkedList();
 	
 	for (int i = 0; i <= 10; i++){
-		s->push(i);
+		dll->insertAtEnd(i);
 	}
 
-	s->print();
-	std::cout << s->pop() << std::endl;
-	std::cout << s->pop() << std::endl << std::endl;
-
-	s->print();
-	std::cout<<s->size();
+	dll->print();
+	std::cout<<dll->len();
 }
