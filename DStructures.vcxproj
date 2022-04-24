@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinarySearchTree.cpp" />
+    <ClCompile Include="BST_Node.cpp" />
     <ClCompile Include="DLL_Node.cpp" />
     <ClCompile Include="DoublyLinkedList.cpp" />
     <ClCompile Include="DStructures.cpp" />
@@ -148,6 +150,8 @@
     <ClCompile Include="Stack_SLL.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="BST_Node.h" />
     <ClInclude Include="DLL_Node.h" />
     <ClInclude Include="DoublyLinkedList.h" />
     <ClInclude Include="Queue_SLL.h" />

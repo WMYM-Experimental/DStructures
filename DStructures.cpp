@@ -10,14 +10,18 @@
 #include "DoublyLinkedList.h"
 
 #include "Stack_SLL.h"
+#include "Queue_SLL.h"
+
+#include "BinarySearchTree.h"
 
 int main(){
-	DoublyLinkedList* dll = new DoublyLinkedList();
+	BinarySearchTree* btree = new BinarySearchTree();
 	
 	for (int i = 0; i <= 10; i++){
-		dll->insertAtEnd(i);
+		btree->insert(btree->root, i);
 	}
 
-	dll->print();
-	std::cout<<dll->len();
+	if (btree->contains(btree->root,0)) {
+		std::cout << "Is in Btree";
+	}
 }
